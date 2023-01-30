@@ -6,8 +6,8 @@ public class RepeatIsBad {
 
     @SuppressWarnings("java:S106")
     public void repeatIsBad(){
-        IntStream.range(0, 20)
-                .mapToObj(x -> "writing the same code doesn't have much impact, and it's also time consuming")
-                .forEach(System.out::println);
+        String phrase = "writing the same code doesn't have much impact, and it's also time consuming";
+        String repeated = phrase.repeat(20);
+        System.out.println(repeated);
     }
 }
